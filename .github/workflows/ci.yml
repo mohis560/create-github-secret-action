@@ -81,7 +81,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     env:
-      FOREIGN_REPO: gliech/dotfiles
+      FOREIGN_REPO: mohis560/demorelease
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -170,7 +170,7 @@ jobs:
         id: self
         uses: ./
         with:
-          location: deinopon
+          location: corp-ais
           org_visibility: ''
           name: CREATE_GITHUB_SECRET_ACTION_TEST
           value: ${{ github.sha }}
