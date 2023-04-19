@@ -25,7 +25,7 @@ outputs:
     description: HTTP Status Code of the request against the GitHub API that
       created/updated the secret
 runs:
-  using: "node12"
+  using: "node16"
   main: "dist/index.js"
 branding:
   color: yellow
