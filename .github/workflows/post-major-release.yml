@@ -13,7 +13,7 @@ jobs:
         id: version-prefix
         run: |
           GIT_REF=${{ github.ref }}
-          echo "::set-output name=main::${GIT_REF:10:2}"
+          echo "main=${GIT_REF:10:2}" >> $GITHUB_OUTPUT
 
       - name: Checkout new release
         uses: actions/checkout@v3
